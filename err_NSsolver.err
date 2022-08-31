@@ -1,0 +1,178 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/sw/apps/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ cd /mioHome/u/wy/ch/dmontgomery/Research/NavierStokes/navierStokesBrinkman
++ JOBID='echo $SLURM_JOBID'
++ cat /var/spool/slurmd/job12380738/slurm_script
+/var/spool/slurmd/job12380738/slurm_script: line 22: script.$JOBID: ambiguous redirect
++ printenv
+/var/spool/slurmd/job12380738/slurm_script: line 23: env.$JOBID: ambiguous redirect
++ module load PrgEnv/devtoolset-9
+++ /sw/apps/lmod/lmod/libexec/lmod bash load PrgEnv/devtoolset-9
++ eval '__LMOD_REF_COUNT_INFOPATH=/opt/rh/devtoolset-9/root/usr/share/info:1;' export '__LMOD_REF_COUNT_INFOPATH;' 'INFOPATH=/opt/rh/devtoolset-9/root/usr/share/info;' export 'INFOPATH;' '__LMOD_REF_COUNT_JAVACONFDIRS=/opt/rh/devtoolset-9/root/etc/java:1;' export '__LMOD_REF_COUNT_JAVACONFDIRS;' 'JAVACONFDIRS=/opt/rh/devtoolset-9/root/etc/java;' export 'JAVACONFDIRS;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/rh/devtoolset-9/root/usr/lib:1\;/opt/rh/devtoolset-9/root/usr/lib64:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64;' export 'LD_LIBRARY_PATH;' '__LMOD_REF_COUNT_LOADEDMODULES=PrgEnv/devtoolset-9:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=PrgEnv/devtoolset-9;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/opt/rh/devtoolset-9/root/usr/share/man:1\;/sw/apps/lmod/lmod/share/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/opt/rh/devtoolset-9/root/usr/share/man:/sw/apps/lmod/lmod/share/man::;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/opt/modulefiles:1\;/sw/mfiles:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/opt/modulefiles:/sw/mfiles;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/opt/rh/devtoolset-9/root/usr/bin:1\;/usr/lib64/qt-3.3/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/bin:1\;/usr/lpp/mmfs/bin:1\;/u/wy/ch/dmontgomery/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/opt/rh/devtoolset-9/root/usr/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/usr/lpp/mmfs/bin:/u/wy/ch/dmontgomery/bin;' export 'PATH;' '__LMOD_REF_COUNT_PCP_DIR=/opt/rh/devtoolset-9/root:1;' export '__LMOD_REF_COUNT_PCP_DIR;' 'PCP_DIR=/opt/rh/devtoolset-9/root;' export 'PCP_DIR;' '__LMOD_REF_COUNT_PERL5LIB=/opt/rh/devtoolset-9/root/usr/lib64/perl5/vendor_perl:1\;/opt/rh/devtoolset-9/root/usr/lib/perl5:1\;/opt/rh/devtoolset-9/root/usr/share/perl5/vendor_perl:1;' export '__LMOD_REF_COUNT_PERL5LIB;' 'PERL5LIB=/opt/rh/devtoolset-9/root/usr/lib64/perl5/vendor_perl:/opt/rh/devtoolset-9/root/usr/lib/perl5:/opt/rh/devtoolset-9/root/usr/share/perl5/vendor_perl;' export 'PERL5LIB;' '__LMOD_REF_COUNT_PYTHONPATH=/opt/rh/devtoolset-9/root/usr/lib64/python2.6/site-packages:1\;/opt/rh/devtoolset-9/root/usr/lib/python2.6/site-packages:1;' export '__LMOD_REF_COUNT_PYTHONPATH;' 'PYTHONPATH=/opt/rh/devtoolset-9/root/usr/lib64/python2.6/site-packages:/opt/rh/devtoolset-9/root/usr/lib/python2.6/site-packages;' export 'PYTHONPATH;' '__LMOD_REF_COUNT__LMFILES_=/sw/mfiles/PrgEnv/devtoolset-9:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/sw/mfiles/PrgEnv/devtoolset-9;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtQcmdFbnY9e1siZm4iXT0iL3N3L21maWxlcy9QcmdFbnYvZGV2dG9vbHNldC05IixbImZ1bGxOYW1lIl09IlByZ0Vudi9kZXZ0b29sc2V0LTkiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJQcmdFbnYvZGV2dG9vbHNldC05IixbIndWIl09IipkZXZ0b29sc2V0Lip6ZmluYWwtLjAwMDAwMDAwOS4qemZpbmFsIix9LH0sbXBhdGhBPXsiL29wdC9tb2R1bGVmaWxlcyIsIi9zdy9tZmlsZXMiLH0sWyJzeXN0ZW1C;' export '_ModuleTable001_;' '_ModuleTable002_=YXNlTVBBVEgiXT0iL29wdC9tb2R1bGVmaWxlczovc3cvbWZpbGVzIix9;' export '_ModuleTable002_;' '_ModuleTable_Sz_=2;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_INFOPATH=/opt/rh/devtoolset-9/root/usr/share/info:1
+++ export __LMOD_REF_COUNT_INFOPATH
+++ INFOPATH=/opt/rh/devtoolset-9/root/usr/share/info
+++ export INFOPATH
+++ __LMOD_REF_COUNT_JAVACONFDIRS=/opt/rh/devtoolset-9/root/etc/java:1
+++ export __LMOD_REF_COUNT_JAVACONFDIRS
+++ JAVACONFDIRS=/opt/rh/devtoolset-9/root/etc/java
+++ export JAVACONFDIRS
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/opt/rh/devtoolset-9/root/usr/lib:1;/opt/rh/devtoolset-9/root/usr/lib64:1'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64
+++ export LD_LIBRARY_PATH
+++ __LMOD_REF_COUNT_LOADEDMODULES=PrgEnv/devtoolset-9:1
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=PrgEnv/devtoolset-9
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/opt/rh/devtoolset-9/root/usr/share/man:1;/sw/apps/lmod/lmod/share/man:1'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/opt/rh/devtoolset-9/root/usr/share/man:/sw/apps/lmod/lmod/share/man::
+++ export MANPATH
+++ __LMOD_REF_COUNT_MODULEPATH='/opt/modulefiles:1;/sw/mfiles:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/opt/modulefiles:/sw/mfiles
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/opt/rh/devtoolset-9/root/usr/bin:1;/usr/lib64/qt-3.3/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/bin:1;/usr/lpp/mmfs/bin:1;/u/wy/ch/dmontgomery/bin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/opt/rh/devtoolset-9/root/usr/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/usr/lpp/mmfs/bin:/u/wy/ch/dmontgomery/bin
+++ export PATH
+++ __LMOD_REF_COUNT_PCP_DIR=/opt/rh/devtoolset-9/root:1
+++ export __LMOD_REF_COUNT_PCP_DIR
+++ PCP_DIR=/opt/rh/devtoolset-9/root
+++ export PCP_DIR
+++ __LMOD_REF_COUNT_PERL5LIB='/opt/rh/devtoolset-9/root/usr/lib64/perl5/vendor_perl:1;/opt/rh/devtoolset-9/root/usr/lib/perl5:1;/opt/rh/devtoolset-9/root/usr/share/perl5/vendor_perl:1'
+++ export __LMOD_REF_COUNT_PERL5LIB
+++ PERL5LIB=/opt/rh/devtoolset-9/root/usr/lib64/perl5/vendor_perl:/opt/rh/devtoolset-9/root/usr/lib/perl5:/opt/rh/devtoolset-9/root/usr/share/perl5/vendor_perl
+++ export PERL5LIB
+++ __LMOD_REF_COUNT_PYTHONPATH='/opt/rh/devtoolset-9/root/usr/lib64/python2.6/site-packages:1;/opt/rh/devtoolset-9/root/usr/lib/python2.6/site-packages:1'
+++ export __LMOD_REF_COUNT_PYTHONPATH
+++ PYTHONPATH=/opt/rh/devtoolset-9/root/usr/lib64/python2.6/site-packages:/opt/rh/devtoolset-9/root/usr/lib/python2.6/site-packages
+++ export PYTHONPATH
+++ __LMOD_REF_COUNT__LMFILES_=/sw/mfiles/PrgEnv/devtoolset-9:1
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/sw/mfiles/PrgEnv/devtoolset-9
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtQcmdFbnY9e1siZm4iXT0iL3N3L21maWxlcy9QcmdFbnYvZGV2dG9vbHNldC05IixbImZ1bGxOYW1lIl09IlByZ0Vudi9kZXZ0b29sc2V0LTkiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJQcmdFbnYvZGV2dG9vbHNldC05IixbIndWIl09IipkZXZ0b29sc2V0Lip6ZmluYWwtLjAwMDAwMDAwOS4qemZpbmFsIix9LH0sbXBhdGhBPXsiL29wdC9tb2R1bGVmaWxlcyIsIi9zdy9tZmlsZXMiLH0sWyJzeXN0ZW1C
+++ export _ModuleTable001_
+++ _ModuleTable002_=YXNlTVBBVEgiXT0iL29wdC9tb2R1bGVmaWxlczovc3cvbWZpbGVzIix9
+++ export _ModuleTable002_
+++ _ModuleTable_Sz_=2
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ module load MPI/openmpi/4.1.1/gcc
+++ /sw/apps/lmod/lmod/libexec/lmod bash load MPI/openmpi/4.1.1/gcc
++ eval '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/lib/extras:1\;/sw/compilers/mpi/openmpi/4.1.1/gnu/lib:1\;/opt/rh/devtoolset-9/root/usr/lib:1\;/opt/rh/devtoolset-9/root/usr/lib64:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/opt/lib/extras:/sw/compilers/mpi/openmpi/4.1.1/gnu/lib:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64;' export 'LD_LIBRARY_PATH;' '__LMOD_REF_COUNT_LIBRARY_PATH=/sw/compilers/mpi/openmpi/4.1.1/gnu/lib:1;' export '__LMOD_REF_COUNT_LIBRARY_PATH;' 'LIBRARY_PATH=/sw/compilers/mpi/openmpi/4.1.1/gnu/lib;' export 'LIBRARY_PATH;' '__LMOD_REF_COUNT_LOADEDMODULES=PrgEnv/devtoolset-9:1\;MPI/openmpi/4.1.1/gcc:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=PrgEnv/devtoolset-9:MPI/openmpi/4.1.1/gcc;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/sw/compilers/mpi/openmpi/4.1.1/gnu/share/man:1\;/opt/rh/devtoolset-9/root/usr/share/man:1\;/sw/apps/lmod/lmod/share/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/sw/compilers/mpi/openmpi/4.1.1/gnu/share/man:/opt/rh/devtoolset-9/root/usr/share/man:/sw/apps/lmod/lmod/share/man::;' export 'MANPATH;' 'MODULEPATH=/opt/modulefiles:/sw/mfiles;' export 'MODULEPATH;' 'MPI_BIN=/sw/compilers/mpi/openmpi/4.1.1/gnu/bin;' export 'MPI_BIN;' 'MPI_COMPILER=mpicc;' export 'MPI_COMPILER;' 'MPI_HOME=/sw/compilers/mpi/openmpi/4.1.1/gnu;' export 'MPI_HOME;' 'MPI_INCLUDE=/sw/compilers/mpi/openmpi/4.1.1/gnu/include;' export 'MPI_INCLUDE;' 'MPI_LIB=/sw/compilers/mpi/openmpi/4.1.1/gnu/lib;' export 'MPI_LIB;' 'MPI_MAN=/sw/compilers/mpi/openmpi/4.1.1/gnu/share/man;' export 'MPI_MAN;' 'MPI_SUFFIX=_openmpi;' export 'MPI_SUFFIX;' 'MPI_SYSCONFIG=/sw/compilers/mpi/openmpi/4.1.1/gnu/etc;' export 'MPI_SYSCONFIG;' 'OMPI_CC=gcc;' export 'OMPI_CC;' 'OMPI_MCA_btl=\^openib;' export 'OMPI_MCA_btl;' 'OMPI_MCA_pml=\^ob1;' export 'OMPI_MCA_pml;' 'OMPI_MCA_shmem_mmap_relocate_backing_file=1;' export 'OMPI_MCA_shmem_mmap_relocate_backing_file;' 'OPENMPI_ROOT=/sw/compilers/mpi/openmpi/4.1.1/gnu;' export 'OPENMPI_ROOT;' '__LMOD_REF_COUNT_PATH=/sw/compilers/mpi/openmpi/4.1.1/gnu/bin:1\;/opt/rh/devtoolset-9/root/usr/bin:1\;/usr/lib64/qt-3.3/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/bin:1\;/usr/lpp/mmfs/bin:1\;/u/wy/ch/dmontgomery/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/sw/compilers/mpi/openmpi/4.1.1/gnu/bin:/opt/rh/devtoolset-9/root/usr/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/usr/lpp/mmfs/bin:/u/wy/ch/dmontgomery/bin;' export 'PATH;' '__LMOD_REF_COUNT__LMFILES_=/sw/mfiles/PrgEnv/devtoolset-9:1\;/sw/mfiles/MPI/openmpi/4.1.1/gcc:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/sw/mfiles/PrgEnv/devtoolset-9:/sw/mfiles/MPI/openmpi/4.1.1/gcc;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbIk1QSS9vcGVubXBpLzQuMS4xIl09e1siZm4iXT0iL3N3L21maWxlcy9NUEkvb3Blbm1waS80LjEuMS9nY2MiLFsiZnVsbE5hbWUiXT0iTVBJL29wZW5tcGkvNC4xLjEvZ2NjIixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iTVBJL29wZW5tcGkvNC4xLjEvZ2NjIixbIndWIl09IipnY2MuKnpmaW5hbCIsfSxQcmdFbnY9e1siZm4iXT0iL3N3L21maWxlcy9QcmdFbnYvZGV2dG9vbHNldC05IixbImZ1bGxOYW1l;' export '_ModuleTable001_;' '_ModuleTable002_=Il09IlByZ0Vudi9kZXZ0b29sc2V0LTkiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJQcmdFbnYvZGV2dG9vbHNldC05IixbIndWIl09IipkZXZ0b29sc2V0Lip6ZmluYWwtLjAwMDAwMDAwOS4qemZpbmFsIix9LH0sbXBhdGhBPXsiL29wdC9tb2R1bGVmaWxlcyIsIi9zdy9tZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL29wdC9tb2R1bGVmaWxlczovc3cvbWZpbGVzIix9;' export '_ModuleTable002_;' '_ModuleTable_Sz_=2;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/opt/lib/extras:1;/sw/compilers/mpi/openmpi/4.1.1/gnu/lib:1;/opt/rh/devtoolset-9/root/usr/lib:1;/opt/rh/devtoolset-9/root/usr/lib64:1'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/opt/lib/extras:/sw/compilers/mpi/openmpi/4.1.1/gnu/lib:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64
+++ export LD_LIBRARY_PATH
+++ __LMOD_REF_COUNT_LIBRARY_PATH=/sw/compilers/mpi/openmpi/4.1.1/gnu/lib:1
+++ export __LMOD_REF_COUNT_LIBRARY_PATH
+++ LIBRARY_PATH=/sw/compilers/mpi/openmpi/4.1.1/gnu/lib
+++ export LIBRARY_PATH
+++ __LMOD_REF_COUNT_LOADEDMODULES='PrgEnv/devtoolset-9:1;MPI/openmpi/4.1.1/gcc:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=PrgEnv/devtoolset-9:MPI/openmpi/4.1.1/gcc
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/sw/compilers/mpi/openmpi/4.1.1/gnu/share/man:1;/opt/rh/devtoolset-9/root/usr/share/man:1;/sw/apps/lmod/lmod/share/man:1'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/sw/compilers/mpi/openmpi/4.1.1/gnu/share/man:/opt/rh/devtoolset-9/root/usr/share/man:/sw/apps/lmod/lmod/share/man::
+++ export MANPATH
+++ MODULEPATH=/opt/modulefiles:/sw/mfiles
+++ export MODULEPATH
+++ MPI_BIN=/sw/compilers/mpi/openmpi/4.1.1/gnu/bin
+++ export MPI_BIN
+++ MPI_COMPILER=mpicc
+++ export MPI_COMPILER
+++ MPI_HOME=/sw/compilers/mpi/openmpi/4.1.1/gnu
+++ export MPI_HOME
+++ MPI_INCLUDE=/sw/compilers/mpi/openmpi/4.1.1/gnu/include
+++ export MPI_INCLUDE
+++ MPI_LIB=/sw/compilers/mpi/openmpi/4.1.1/gnu/lib
+++ export MPI_LIB
+++ MPI_MAN=/sw/compilers/mpi/openmpi/4.1.1/gnu/share/man
+++ export MPI_MAN
+++ MPI_SUFFIX=_openmpi
+++ export MPI_SUFFIX
+++ MPI_SYSCONFIG=/sw/compilers/mpi/openmpi/4.1.1/gnu/etc
+++ export MPI_SYSCONFIG
+++ OMPI_CC=gcc
+++ export OMPI_CC
+++ OMPI_MCA_btl='^openib'
+++ export OMPI_MCA_btl
+++ OMPI_MCA_pml='^ob1'
+++ export OMPI_MCA_pml
+++ OMPI_MCA_shmem_mmap_relocate_backing_file=1
+++ export OMPI_MCA_shmem_mmap_relocate_backing_file
+++ OPENMPI_ROOT=/sw/compilers/mpi/openmpi/4.1.1/gnu
+++ export OPENMPI_ROOT
+++ __LMOD_REF_COUNT_PATH='/sw/compilers/mpi/openmpi/4.1.1/gnu/bin:1;/opt/rh/devtoolset-9/root/usr/bin:1;/usr/lib64/qt-3.3/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/bin:1;/usr/lpp/mmfs/bin:1;/u/wy/ch/dmontgomery/bin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/sw/compilers/mpi/openmpi/4.1.1/gnu/bin:/opt/rh/devtoolset-9/root/usr/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/usr/lpp/mmfs/bin:/u/wy/ch/dmontgomery/bin
+++ export PATH
+++ __LMOD_REF_COUNT__LMFILES_='/sw/mfiles/PrgEnv/devtoolset-9:1;/sw/mfiles/MPI/openmpi/4.1.1/gcc:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/sw/mfiles/PrgEnv/devtoolset-9:/sw/mfiles/MPI/openmpi/4.1.1/gcc
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbIk1QSS9vcGVubXBpLzQuMS4xIl09e1siZm4iXT0iL3N3L21maWxlcy9NUEkvb3Blbm1waS80LjEuMS9nY2MiLFsiZnVsbE5hbWUiXT0iTVBJL29wZW5tcGkvNC4xLjEvZ2NjIixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iTVBJL29wZW5tcGkvNC4xLjEvZ2NjIixbIndWIl09IipnY2MuKnpmaW5hbCIsfSxQcmdFbnY9e1siZm4iXT0iL3N3L21maWxlcy9QcmdFbnYvZGV2dG9vbHNldC05IixbImZ1bGxOYW1l
+++ export _ModuleTable001_
+++ _ModuleTable002_=Il09IlByZ0Vudi9kZXZ0b29sc2V0LTkiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJQcmdFbnYvZGV2dG9vbHNldC05IixbIndWIl09IipkZXZ0b29sc2V0Lip6ZmluYWwtLjAwMDAwMDAwOS4qemZpbmFsIix9LH0sbXBhdGhBPXsiL29wdC9tb2R1bGVmaWxlcyIsIi9zdy9tZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL29wdC9tb2R1bGVmaWxlczovc3cvbWZpbGVzIix9
+++ export _ModuleTable002_
+++ _ModuleTable_Sz_=2
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ module load Lib/petsc/3.13-gnu-ompi-dbg
+++ /sw/apps/lmod/lmod/libexec/lmod bash load Lib/petsc/3.13-gnu-ompi-dbg
++ eval '__LMOD_REF_COUNT_CPATH=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/include:1;' export '__LMOD_REF_COUNT_CPATH;' 'CPATH=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/include;' export 'CPATH;' '__LMOD_REF_COUNT_INCLUDE=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/include:1;' export '__LMOD_REF_COUNT_INCLUDE;' 'INCLUDE=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/include;' export 'INCLUDE;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/lib:1\;/opt/lib/extras:1\;/sw/compilers/mpi/openmpi/4.1.1/gnu/lib:1\;/opt/rh/devtoolset-9/root/usr/lib:1\;/opt/rh/devtoolset-9/root/usr/lib64:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/lib:/opt/lib/extras:/sw/compilers/mpi/openmpi/4.1.1/gnu/lib:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64;' export 'LD_LIBRARY_PATH;' '__LMOD_REF_COUNT_LIBRARY_PATH=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/lib:1\;/sw/compilers/mpi/openmpi/4.1.1/gnu/lib:1;' export '__LMOD_REF_COUNT_LIBRARY_PATH;' 'LIBRARY_PATH=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/lib:/sw/compilers/mpi/openmpi/4.1.1/gnu/lib;' export 'LIBRARY_PATH;' '__LMOD_REF_COUNT_LOADEDMODULES=PrgEnv/devtoolset-9:1\;MPI/openmpi/4.1.1/gcc:1\;Lib/petsc/3.13-gnu-ompi-dbg:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=PrgEnv/devtoolset-9:MPI/openmpi/4.1.1/gcc:Lib/petsc/3.13-gnu-ompi-dbg;' export 'LOADEDMODULES;' 'MODULEPATH=/opt/modulefiles:/sw/mfiles;' export 'MODULEPATH;' 'PETC_ARCH=linux_gnu_ompi_debug;' export 'PETC_ARCH;' 'PETSC_DIR=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug;' export 'PETSC_DIR;' '__LMOD_REF_COUNT__LMFILES_=/sw/mfiles/PrgEnv/devtoolset-9:1\;/sw/mfiles/MPI/openmpi/4.1.1/gcc:1\;/sw/mfiles/Lib/petsc/3.13-gnu-ompi-dbg:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/sw/mfiles/PrgEnv/devtoolset-9:/sw/mfiles/MPI/openmpi/4.1.1/gcc:/sw/mfiles/Lib/petsc/3.13-gnu-ompi-dbg;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbIkxpYi9wZXRzYyJdPXtbImZuIl09Ii9zdy9tZmlsZXMvTGliL3BldHNjLzMuMTMtZ251LW9tcGktZGJnIixbImZ1bGxOYW1lIl09IkxpYi9wZXRzYy8zLjEzLWdudS1vbXBpLWRiZyIsWyJsb2FkT3JkZXIiXT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IkxpYi9wZXRzYy8zLjEzLWdudS1vbXBpLWRiZyIsWyJ3ViJdPSIwMDAwMDAwMDMuMDAwMDAwMDEzLipnbnUuKm9tcGkuKmRiZy4qemZpbmFsIix9LFsiTVBJL29wZW5tcGkvNC4x;' export '_ModuleTable001_;' '_ModuleTable002_=LjEiXT17WyJmbiJdPSIvc3cvbWZpbGVzL01QSS9vcGVubXBpLzQuMS4xL2djYyIsWyJmdWxsTmFtZSJdPSJNUEkvb3Blbm1waS80LjEuMS9nY2MiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJNUEkvb3Blbm1waS80LjEuMS9nY2MiLFsid1YiXT0iKmdjYy4qemZpbmFsIix9LFByZ0Vudj17WyJmbiJdPSIvc3cvbWZpbGVzL1ByZ0Vudi9kZXZ0b29sc2V0LTkiLFsiZnVsbE5hbWUiXT0iUHJnRW52L2RldnRvb2xzZXQtOSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IlByZ0Vudi9kZXZ0b29sc2V0;' export '_ModuleTable002_;' '_ModuleTable003_=LTkiLFsid1YiXT0iKmRldnRvb2xzZXQuKnpmaW5hbC0uMDAwMDAwMDA5Lip6ZmluYWwiLH0sfSxtcGF0aEE9eyIvb3B0L21vZHVsZWZpbGVzIiwiL3N3L21maWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvb3B0L21vZHVsZWZpbGVzOi9zdy9tZmlsZXMiLH0=;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_CPATH=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/include:1
+++ export __LMOD_REF_COUNT_CPATH
+++ CPATH=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/include
+++ export CPATH
+++ __LMOD_REF_COUNT_INCLUDE=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/include:1
+++ export __LMOD_REF_COUNT_INCLUDE
+++ INCLUDE=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/include
+++ export INCLUDE
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/lib:1;/opt/lib/extras:1;/sw/compilers/mpi/openmpi/4.1.1/gnu/lib:1;/opt/rh/devtoolset-9/root/usr/lib:1;/opt/rh/devtoolset-9/root/usr/lib64:1'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/lib:/opt/lib/extras:/sw/compilers/mpi/openmpi/4.1.1/gnu/lib:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64
+++ export LD_LIBRARY_PATH
+++ __LMOD_REF_COUNT_LIBRARY_PATH='/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/lib:1;/sw/compilers/mpi/openmpi/4.1.1/gnu/lib:1'
+++ export __LMOD_REF_COUNT_LIBRARY_PATH
+++ LIBRARY_PATH=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug/lib:/sw/compilers/mpi/openmpi/4.1.1/gnu/lib
+++ export LIBRARY_PATH
+++ __LMOD_REF_COUNT_LOADEDMODULES='PrgEnv/devtoolset-9:1;MPI/openmpi/4.1.1/gcc:1;Lib/petsc/3.13-gnu-ompi-dbg:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=PrgEnv/devtoolset-9:MPI/openmpi/4.1.1/gcc:Lib/petsc/3.13-gnu-ompi-dbg
+++ export LOADEDMODULES
+++ MODULEPATH=/opt/modulefiles:/sw/mfiles
+++ export MODULEPATH
+++ PETC_ARCH=linux_gnu_ompi_debug
+++ export PETC_ARCH
+++ PETSC_DIR=/sw/libs/petsc/3.13.6/linux_gnu_ompi_debug
+++ export PETSC_DIR
+++ __LMOD_REF_COUNT__LMFILES_='/sw/mfiles/PrgEnv/devtoolset-9:1;/sw/mfiles/MPI/openmpi/4.1.1/gcc:1;/sw/mfiles/Lib/petsc/3.13-gnu-ompi-dbg:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/sw/mfiles/PrgEnv/devtoolset-9:/sw/mfiles/MPI/openmpi/4.1.1/gcc:/sw/mfiles/Lib/petsc/3.13-gnu-ompi-dbg
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbIkxpYi9wZXRzYyJdPXtbImZuIl09Ii9zdy9tZmlsZXMvTGliL3BldHNjLzMuMTMtZ251LW9tcGktZGJnIixbImZ1bGxOYW1lIl09IkxpYi9wZXRzYy8zLjEzLWdudS1vbXBpLWRiZyIsWyJsb2FkT3JkZXIiXT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IkxpYi9wZXRzYy8zLjEzLWdudS1vbXBpLWRiZyIsWyJ3ViJdPSIwMDAwMDAwMDMuMDAwMDAwMDEzLipnbnUuKm9tcGkuKmRiZy4qemZpbmFsIix9LFsiTVBJL29wZW5tcGkvNC4x
+++ export _ModuleTable001_
+++ _ModuleTable002_=LjEiXT17WyJmbiJdPSIvc3cvbWZpbGVzL01QSS9vcGVubXBpLzQuMS4xL2djYyIsWyJmdWxsTmFtZSJdPSJNUEkvb3Blbm1waS80LjEuMS9nY2MiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJNUEkvb3Blbm1waS80LjEuMS9nY2MiLFsid1YiXT0iKmdjYy4qemZpbmFsIix9LFByZ0Vudj17WyJmbiJdPSIvc3cvbWZpbGVzL1ByZ0Vudi9kZXZ0b29sc2V0LTkiLFsiZnVsbE5hbWUiXT0iUHJnRW52L2RldnRvb2xzZXQtOSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IlByZ0Vudi9kZXZ0b29sc2V0
+++ export _ModuleTable002_
+++ _ModuleTable003_=LTkiLFsid1YiXT0iKmRldnRvb2xzZXQuKnpmaW5hbC0uMDAwMDAwMDA5Lip6ZmluYWwiLH0sfSxtcGF0aEE9eyIvb3B0L21vZHVsZWZpbGVzIiwiL3N3L21maWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvb3B0L21vZHVsZWZpbGVzOi9zdy9tZmlsZXMiLH0=
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ echo 'running job'
++ srun run_main -u_sys_ksp_type bcgs -u_sys_ksp_rtol 1e-6 -u_sys_ksp_initial_guess_nonzero 1 -v_sys_ksp_type bcgs -v_sys_ksp_rtol 1e-6 -v_sys_ksp_initial_guess_nonzero 1 -p_sys_ksp_type preonly -p_sys_pc_type lu -p_sys_pc_factor_mat_solver_type mumps
++ echo 'job has finished'
